@@ -17,6 +17,11 @@
         {"Region":"London","Power":"London"},
         {"Region":"Edinburgh","Power":"Edinburgh"}
     ],
+    "Home_Region_Assignments":[
+        {"Region":"Liverpool","Power":"Liverpool"},
+        {"Region":"London","Power":"London"},
+        {"Region":"Edinburgh","Power":"Edinburgh"}
+    ],
     "Units":[
         {"Type":"Army","Region":"Liverpool","Owner":"Liverpool"},
         {"Type":"Army","Region":"London","Owner":"London"},

@@ -1,18 +1,26 @@
-public class Main {
+import java.io.File;
+import java.util.Scanner;
+
+public class Main {   
     public static void main(String[] args) {
-        help();
+        Scanner sc = new Scanner(System.in);
+        help(sc);
     }
-    public static void help() {
+    public static void help(Scanner sc) {
         System.out.println("1: Import a JSON file");
         System.out.println("2: Create a blank file");
-        switch(Ask.query("Option")) {
+        switch(query("Option",sc)) {
             case "1":
-                Loader.main();
+                Loader.load(new File(query("File path",sc)));
                 break;
             case "2":
                 break;
             default:
-            help();
+            help(sc);
         }
+    }
+    public static String query(String query, Scanner sc) {
+        System.out.print(query + ": ");
+        return sc.nextLine();
     }
 }

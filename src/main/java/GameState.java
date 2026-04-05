@@ -18,6 +18,9 @@ public class GameState {
     @JsonProperty("Region_Assignments")
     public List<RegionAssignment> regionAssignments;
 
+    @JsonProperty("Home_Region_Assignments")
+    public List<RegionAssignment> homeRegionAssignments;
+
     @JsonProperty("Units")
     public List<Unit> units;
 
@@ -29,7 +32,7 @@ public class GameState {
         for (String power : powers) {
             str += power + "\n";
             for (Unit unit : units) {
-                if (unit.owner == power) {
+                if (unit.owner.equals(power)) {
                     str += unit.type + " in " + unit.region + "\n";
                 }
             }

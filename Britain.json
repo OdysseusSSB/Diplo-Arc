@@ -1,0 +1,25 @@
+{
+    "Name":"Britain",
+    "Season":[
+        {"First":{"Year":1901,"Season":"Spring"}},
+        {"Current":{"Year":1901,"Season":"Spring"}}],
+    "Powers":["Liverpool", "London", "Edinburgh"],
+    "Regions":[
+        {"name":"Clyde", "supply_value":0},
+        {"name":"Liverpool", "abr":"Lvp", "supply_value":1},
+        {"name":"Wales", "supply_value":0},
+        {"name":"London", "supply_value":1},
+        {"name":"Yorkshire", "supply_value":0},
+        {"name":"Edinburgh", "supply_value":1}
+    ],
+    "Region_Assignments":[
+        {"Region":"Liverpool","Power":"Liverpool"},
+        {"Region":"London","Power":"London"},
+        {"Region":"Edinburgh","Power":"Edinburgh"}
+    ],
+    "Units":[
+        {"Type":"Army","Region":"Liverpool","Owner":"Liverpool"},
+        {"Type":"Army","Region":"London","Owner":"London"},
+        {"Type":"Army","Region":"Edinburgh","Owner":"Edinburgh"}
+    ]
+}

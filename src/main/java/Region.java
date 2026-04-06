@@ -1,4 +1,5 @@
 import com.fasterxml.jackson.annotation.JsonProperty;
+import java.util.List;
 
 public class Region {
 
@@ -10,4 +11,7 @@ public class Region {
 
     @JsonProperty("supply_value")
     public int supplyValue;
+
+    @JsonProperty("adjacencies")
+    public List<Adjacency> adjacencies;
 }
